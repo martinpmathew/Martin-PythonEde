@@ -1,0 +1,10 @@
+<data>
+    <book title="The Little Prince">
+        <author>Antoine de Saint-Exupéry</author>
+        <year>1943</year>
+    </book>
+    <book title="Hamlet">
+        <author>William Shakespeare</author>
+        <year>1603</year>
+    </book>
+</data>
