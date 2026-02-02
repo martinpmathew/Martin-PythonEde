@@ -1,0 +1,1951 @@
+{
+    "GIUpdateWin": {
+        "hosts": [
+            "tud001"
+        ],
+        "vars": {
+            "ansible_become_method": "runas",
+            "ansible_connection": "winrm",
+            "ansible_user": "Administrator",
+            "ansible_winrm_read_timeout_sec": 600,
+            "ansible_winrm_server_cert_validation": "ignore",
+            "ansible_winrm_transport": "basic"
+        }
+    },
+    "MMgroup1": {
+        "hosts": [
+            "tss002",
+            "adc002"
+        ]
+    },
+    "MMgroup2": {
+        "hosts": [
+            "tss001",
+            "adc001",
+            "ica001"
+        ]
+    },
+    "MMgroup3": {
+        "hosts": [
+            "wus001"
+        ]
+    },
+    "MMgroupL1": {
+        "hosts": [
+            "ans001"
+        ]
+    },
+    "MMgroupL2": {
+        "hosts": [
+            "pxy002",
+            "nes001"
+        ]
+    },
+    "MMgroupL3": {
+        "hosts": [
+            "pxy003",
+            "hsv001",
+            "hgw001",
+            "srs001"
+        ]
+    },
+    "MMgroupL4": {
+        "hosts": [
+            "deb001"
+        ]
+    },
+    "_meta": {
+        "hostvars": {
+            "adc001": {
+                "ansible_host": "phy01adc001.intvcs01.next"
+            },
+            "adc002": {
+                "ansible_host": "phy01adc002.intvcs01.next"
+            },
+            "ans001": {
+                "ansible_host": "phy01ans001.intvcs01.next"
+            },
+            "cmp001": {
+                "ansible_host": "172.22.16.111"
+            },
+            "cmp002": {
+                "ansible_host": "172.22.16.112"
+            },
+            "cmp003": {
+                "ansible_host": "172.22.16.113"
+            },
+            "cmp004": {
+                "ansible_host": "172.22.16.114"
+            },
+            "cpx001": {
+                "ansible_host": "phy01cpx001.intvcs01.next"
+            },
+            "deb001": {
+                "ansible_host": "phy01deb001.intvcs01.next"
+            },
+            "drCmp001": {
+                "ansible_host": "172.22.16.115"
+            },
+            "drCmp002": {
+                "ansible_host": "172.22.16.116"
+            },
+            "drCmp003": {
+                "ansible_host": "172.22.16.117"
+            },
+            "drCmp004": {
+                "ansible_host": "172.22.16.118"
+            },
+            "drMgt001": {
+                "ansible_host": "172.22.16.105"
+            },
+            "drMgt002": {
+                "ansible_host": "172.22.16.106"
+            },
+            "drMgt003": {
+                "ansible_host": "172.22.16.107"
+            },
+            "drMgt004": {
+                "ansible_host": "172.22.16.108"
+            },
+            "esxi001": {
+                "ansible_host": "172.22.16.101"
+            },
+            "esxi002": {
+                "ansible_host": "172.22.16.102"
+            },
+            "esxi003": {
+                "ansible_host": "172.22.16.103"
+            },
+            "esxi004": {
+                "ansible_host": "172.22.16.104"
+            },
+            "hgw001": {
+                "ansible_host": "phy01hgw001.intvcs01.next"
+            },
+            "hsv001": {
+                "ansible_host": "phy01hsv001.intvcs01.next"
+            },
+            "ica001": {
+                "ansible_host": "phy01ica001.intvcs01.next"
+            },
+            "idm001": {
+                "ansible_host": "phy01idm001.intvcs01.next"
+            },
+            "inf001": {
+                "ansible_host": "phy01inf001.intvcs01.next"
+            },
+            "inf002": {
+                "ansible_host": "phy01inf002.intvcs01.next"
+            },
+            "inf003": {
+                "ansible_host": "phy01inf003.intvcs01.next"
+            },
+            "inf004": {
+                "ansible_host": "phy01inf004.intvcs01.next"
+            },
+            "inf005": {
+                "ansible_host": "phy01inf005.intvcs01.next"
+            },
+            "lcm001": {
+                "ansible_host": "phy01lcm001.intvcs01.next"
+            },
+            "nes001": {
+                "ansible_host": "phy01nes001.intvcs01.next"
+            },
+            "nsx001": {
+                "ansible_host": "phy01nsx001.intvcs01.next"
+            },
+            "nsx002": {
+                "ansible_host": "phy01nsx002.intvcs01.next"
+            },
+            "ops002": {
+                "ansible_host": "phy01ops002.intvcs01.next"
+            },
+            "ops003": {
+                "ansible_host": "phy01ops003.intvcs01.next"
+            },
+            "phy01ecn01edg01": {
+                "ansible_host": "phy01ecn01edg01.intvcs01.next"
+            },
+            "phy01ecn01edg02": {
+                "ansible_host": "phy01ecn01edg02.intvcs01.next"
+            },
+            "pxy002": {
+                "ansible_host": "phy01pxy002.intvcs01.next"
+            },
+            "pxy003": {
+                "ansible_host": "phy01pxy003.intvcs01.next"
+            },
+            "rca001": {
+                "ansible_host": "phy01rca001.intvcs01.next"
+            },
+            "sdm001": {
+                "ansible_host": "phy01sdm001.intvcs01.next"
+            },
+            "srm001": {
+                "ansible_host": "phy01srm001.intvcs01.next"
+            },
+            "srs001": {
+                "ansible_host": "phy01srs001.intvcs01.next"
+            },
+            "tss001": {
+                "ansible_host": "phy01tss001.intvcs01.next"
+            },
+            "tss002": {
+                "ansible_host": "phy01tss002.intvcs01.next"
+            },
+            "tud001": {
+                "ansible_host": "172.22.16.10"
+            },
+            "vcs001": {
+                "ansible_host": "phy01vcs001.intvcs01.next"
+            },
+            "vcs002": {
+                "ansible_host": "phy01vcs002.intvcs01.next"
+            },
+            "vli001a": {
+                "ansible_host": "phy01vli001a.intvcs01.next"
+            },
+            "vli001b": {
+                "ansible_host": "phy01vli001b.intvcs01.next"
+            },
+            "vli001c": {
+                "ansible_host": "phy01vli001c.intvcs01.next"
+            },
+            "vni001": {
+                "ansible_host": "phy01vni001.intvcs01.next"
+            },
+            "vra002": {
+                "ansible_host": "phy01vra002.intvcs01.next"
+            },
+            "vra003": {
+                "ansible_host": "phy01vra003.intvcs01.next"
+            },
+            "vra004": {
+                "ansible_host": "phy01vra004.intvcs01.next"
+            },
+            "vsr001": {
+                "ansible_host": "phy01vsr001.intvcs01.next"
+            },
+            "vwa001": {
+                "ansible_host": "phy01vwa001.intvcs01.next.intvcs01.next"
+            },
+            "vwa002": {
+                "ansible_host": "phy01vwa002.intvcs01.next.intvcs01.next"
+            },
+            "wus001": {
+                "ansible_host": "phy01wus001.intvcs01.next"
+            }
+        }
+    },
+    "adc": {
+        "hosts": [
+            "adc001",
+            "adc002"
+        ]
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "windows",
+            "GIUpdateWin",
+            "adc",
+            "ca",
+            "wus",
+            "tss",
+            "MMgroup1",
+            "MMgroup2",
+            "MMgroup3",
+            "MMgroupL1",
+            "MMgroupL2",
+            "MMgroupL3",
+            "MMgroupL4",
+            "linux",
+            "sddcmanager",
+            "ops",
+            "cloudProxy",
+            "idm",
+            "marketplace",
+            "proxy",
+            "nsx",
+            "esximgtall",
+            "esxicmpall",
+            "vcs",
+            "witness",
+            "vsr",
+            "srm",
+            "inf",
+            "vli",
+            "vraproxies",
+            "vni",
+            "nsxtedges",
+            "vra"
+        ],
+        "vars": {
+            "activeDirectory": {
+                "domainDn": "DC=intvcs01,DC=next",
+                "domainName": "intvcs01.next",
+                "domainNetbiosName": "intvcs01",
+                "prefix1": "vcs01",
+                "prefix2": "next"
+            },
+            "alcatraz": {
+                "alcatrazUrl": "161.89.90.30",
+                "customerName": "dummyCST",
+                "password": "Harden-Removed",
+                "providerId": "GPXY",
+                "username": "ITC_GPXY"
+            },
+            "apiHost": {
+                "hsv001": "https://{{ mgmtDns.hsv001.name }}.{{ searchDomain }}",
+                "idm001": "https://{{ mgmtDns.idm001.name }}.{{ searchDomain }}",
+                "inf001": "https://{{ mgmtDns.inf001.name }}.{{ searchDomain }}",
+                "lcm001": "https://{{ mgmtDns.lcm001.name }}.{{ searchDomain }}",
+                "nsx001": "https://{{ mgmtDns.nsx001.name }}.{{ searchDomain }}",
+                "nsx002": "https://{{ mgmtDns.nsx002.name }}.{{ searchDomain }}",
+                "ops001": "https://{{ mgmtDns.ops001.name }}.{{ searchDomain }}",
+                "ops002": "https://{{ mgmtDns.ops002.name }}.{{ searchDomain }}",
+                "sdm001": "https://{{ mgmtDns.sdm001.name }}.{{ searchDomain }}",
+                "vcs001": "https://{{ mgmtDns.vcs001.name }}.{{ searchDomain }}",
+                "vcs002": "https://{{ mgmtDns.vcs002.name }}.{{ searchDomain }}",
+                "vli001": "https://{{ mgmtDns.vli001.name }}.{{ searchDomain }}",
+                "vni001": "https://{{ mgmtDns.vni001.name }}.{{ searchDomain }}",
+                "vra001": "https://{{ mgmtDns.vra001.name }}.{{ searchDomain }}"
+            },
+            "apiUrl": {
+                "idm": {
+                    "changeLicense": "/SAAS/API/1.0/REST/system/globalConfig/licenseSerialNumber",
+                    "connectorInstances": "/SAAS/jersey/manager/api/connectormanagement/connectorinstances",
+                    "createServiceClient": "/SAAS/admin/settings/OAuthClient/createServiceClient",
+                    "directoryConfigs": "/SAAS/jersey/manager/api/connectormanagement/directoryconfigs",
+                    "generateRandomSecret": "/SAAS/admin/settings/OAuthClient/generateRandomOAuthSecret",
+                    "listClients": "/SAAS/jersey/manager/api/oauth2clients",
+                    "providersVidm": "/api/v1/node/aaa/providers/vidm",
+                    "roleBindings": "/api/v1/aaa/role-bindings",
+                    "tenantSettings": "/SAAS/jersey/manager/api/tenants/settings",
+                    "token": "/SAAS/API/1.0/REST/auth/system/login",
+                    "userAttributes": "/SAAS/jersey/manager/api/vidm/userattributedefinitions",
+                    "validateLicense": "/SAAS/API/1.0/REST/system/globalConfig/validateLicense"
+                },
+                "inf": {
+                    "adAuth": "/wapi/v2.10/ad_auth_service",
+                    "adminGroups": "/wapi/v2.10/admingroup",
+                    "adminUsers": "/wapi/v2.10/adminuser",
+                    "attributeDef": "/wapi/v2.10/extensibleattributedef",
+                    "authPolicy": "/wapi/v2.10/authpolicy",
+                    "gridUpgradeStatus": "/upgradestatus?type=GRID",
+                    "groupPermissions": "/wapi/v2.10/permission",
+                    "member": "/wapi/v2.10/member",
+                    "network": "/wapi/v2.10/network",
+                    "nodeUpgradeStatus": "/upgradestatus?type=VNODE",
+                    "range": "/wapi/v2.12/range",
+                    "wapi": "/wapi/v2.10/"
+                },
+                "lcm": {
+                    "binariesUpload": "/lcm/lcops/api/v2/settings/binaries/upload",
+                    "certificateAlias": "/lcm/locker/api/certificates/alias",
+                    "certificateImport": "/lcm/locker/api/v2/certificates/import",
+                    "certificates": "/lcm/locker/api/v2/certificates",
+                    "checkUpgrades": "/lcm/lcops/api/v2/checkUpgradeLcmVa",
+                    "configureDns": "/lcm/api/config/dns",
+                    "configureNtp": "/lcm/api/config/ntp",
+                    "datacenters": "/lcm/lcops/api/v2/datacenters",
+                    "downloadPatch": "/lcm/lcops/api/v2/settings/patch-binaries/download",
+                    "downloadProduct": "/lcm/lcops/api/v2/settings/my-vmware/product-binaries/download",
+                    "environments": "/lcm/lcops/api/v2/environments",
+                    "getPatchBinaries": "/lcm/lcops/api/settings/patchsetting",
+                    "groups": "/lcm/authzn/api/v2/groups",
+                    "healthStatus": "/lcm/health/api/v2/status",
+                    "idpConfigs": "/lcm/authzn/api/idp/dirConfigs",
+                    "idpProfileConfig": "/lcm/authzn/api/idp/dirConfigs/syncprofile",
+                    "idpProfileSync": "/lcm/authzn/api/idp/dirConfigs/syncprofile/sync",
+                    "importPatches": "/lcm/lcops/api/v2/settings/patch-binaries/import",
+                    "importProducts": "/lcm/lcops/api/v2/settings/product-binaries/download",
+                    "lcenseByNamedInfo": "/lcm/locker/api/v2/licenses/alias/",
+                    "licenseAdd": "/lcm/locker/api/v2/license/validate-and-add",
+                    "licenseAlias": "/lcm/locker/api/licenses/alias",
+                    "licenseByVmiddInfo": "/lcm/locker/api/v2/licenses/detail/",
+                    "licenses": "/lcm/locker/api/v2/licenses",
+                    "login": "/lcm/api/v1/login",
+                    "logout": "/lcm/api/v1/logout",
+                    "marketplaceAppDownload": "/lcm/marketplace/api/appDownload",
+                    "marketplaceAppInstall": "/lcm/marketplace/api/appInstall",
+                    "myVmwareAccounts": "/lcm/lcops/api/v2/settings/my-vmware/accounts",
+                    "passwords": "/lcm/locker/api/v2/passwords",
+                    "patchBinaries": "/lcm/lcops/api/v2/settings/patch-binaries/",
+                    "prevalidate": "/lcm/lcops/api/v2/system-upgrade/prevalidate",
+                    "productBinaries": "/lcm/lcops/api/v2/settings/my-vmware/product-binaries",
+                    "proxySetting": "/lcm/lcops/api/settings/proxysetting",
+                    "psPack": "/lcm/lcops/api/v2/system-pspack",
+                    "pspackImport": "/lcm/lcops/api/v2/system-pspack/import",
+                    "repositoryUrl": "/lcm/lcops/api/products",
+                    "requests": "/lcm/request/api/v2/requests",
+                    "roles": "/lcm/authzn/api/v2/roles/external",
+                    "sourceMapping": "/lcm/lcops/api/settings/sourcelocationsetting",
+                    "systemDetails": "/lcm/lcops/api/v2/settings/system-details",
+                    "systemSnapshot": "/lcm/lcops/api/v2/system-snapshot",
+                    "systemUpgrade": "/lcm/lcops/api/v2/system-upgrade",
+                    "systemUpgradeStatus": "/lcm/lcops/api/v2/upgradeLcmVa",
+                    "updatePassword": "/lcm/authzn/api/users/updatepassword",
+                    "upgradePrepare": "/lcm/lcops/api/v2/system-upgrade/prepare",
+                    "version": "/lcm/lcops/api/policy/lcm/version",
+                    "vidmUserGroup": "/lcm/authzn/api/v2/search/vidm-user-group"
+                },
+                "nsx": {
+                    "clusterProfile": "/api/v1/cluster-profiles",
+                    "edgeClusters": "/api/v1/edge-clusters",
+                    "edgeTransportNode": "/api/v1/transport-nodes",
+                    "edgeTransportNodeState": "/api/v1/transport-nodes/state",
+                    "firewallSchedulers": "/policy/api/v1/infra/firewall-schedulers",
+                    "hostSwitchProfiles": "/api/v1/host-switch-profiles/?include_system_owned=True",
+                    "infra": "/policy/api/v1/infra",
+                    "ipDiscoveryProfiles": "/policy/api/v1/infra/ip-discovery-profiles",
+                    "ipPools": "/policy/api/v1/infra/ip-pools",
+                    "lbServerPools": "/policy/api/v1/infra/lb-pools",
+                    "lbVirtualServers": "/policy/api/v1/infra/lb-virtual-servers",
+                    "logicalSwitches": "/api/v1/logical-switches",
+                    "macDiscoveryProfiles": "/policy/api/v1/infra/mac-discovery-profiles",
+                    "nodeConfigProfiles": "/api/v1/configs/central-config/node-config-profiles",
+                    "profileEdgeBridge": "/policy/api/v1/infra/sites/default/enforcement-points/default/edge-bridge-profiles",
+                    "securityPolicies": "/policy/api/v1/infra/domains/default/security-policies",
+                    "segment": "/policy/api/v1/infra/segments",
+                    "transportZones": "/api/v1/transport-zones",
+                    "uplinkProfile": "/api/v1/host-switch-profiles",
+                    "version": "/api/v1/node"
+                },
+                "ops": {
+                    "adapters": "/suite-api/api/adapters",
+                    "agents": "/suite-api/api/applications/agents",
+                    "alertPlugins": "/suite-api/api/alertplugins",
+                    "authSources": "/suite-api/api/auth/sources",
+                    "credentials": "/suite-api/api/credentials",
+                    "deploymentStatus": "/suite-api/api/deployment/node/status",
+                    "notificationRules": "/suite-api/api/notifications/rules",
+                    "reportDefinitions": "/suite-api/api/reportdefinitions",
+                    "resources": "/suite-api/api/resources",
+                    "solutions": "/ui/solution.action",
+                    "tokenAcquire": "/suite-api/api/auth/token/acquire",
+                    "userGroups": "/suite-api/api/auth/usergroups",
+                    "users": "/suite-api/api/auth/users"
+                },
+                "sdm": {
+                    "avns": "/v1/avns",
+                    "backupConfiguration": "/v1/system/backup-configuration",
+                    "bundles": "/v1/bundles",
+                    "certificateAuthorities": "/v1/certificate-authorities",
+                    "clusters": "/v1/clusters",
+                    "configProxy": "/v1/system/proxy-configuration",
+                    "depotUser": "/v1/system/settings/depot",
+                    "domains": "/v1/domains",
+                    "edgeClusters": "/v1/edge-clusters",
+                    "hosts": "/v1/hosts",
+                    "licenses": "/v1/license-keys",
+                    "networkPools": "/v1/network-pools",
+                    "refreshToken": "/v1/tokens/access-token/refresh",
+                    "roles": "/v1/roles",
+                    "tasks": "/v1/tasks",
+                    "token": "/v1/tokens",
+                    "users": "/v1/users",
+                    "vcfServices": "/v1/vcf-services",
+                    "vrliDomains": "/v1/vrli/domains",
+                    "vropsDomains": "/v1/vrops/domains",
+                    "vrslcms": "/v1/vrslcms"
+                },
+                "vcs": {
+                    "clusters": "/rest/vcenter/cluster",
+                    "datacenter": "/rest/vcenter/datacenter",
+                    "kmsProviders": "/api/vcenter/crypto-manager/kms/providers",
+                    "sessionToken": "/rest/com/vmware/cis/session",
+                    "setDns": "/rest/appliance/networking/dns/servers?server="
+                },
+                "vli": {
+                    "token": "/api/v2/sessions",
+                    "vsphere": "/api/v2/vsphere"
+                },
+                "vni": {
+                    "infobloxManagers": "/api/ni/data-sources/infoblox-managers",
+                    "infraNodes": "/api/ni/infra/nodes",
+                    "nsxManagers": "/api/ni/data-sources/nsxt-managers",
+                    "token": "/api/ni/auth/token",
+                    "userGroups": "/api/ni/settings/user-groups",
+                    "vcenters": "/api/ni/data-sources/vcenters",
+                    "vidmSettings": "/api/ni/settings/vidm",
+                    "vidmUserGroups": "/api/ni/settings/user-groups/vidm"
+                },
+                "vra": {
+                    "abxAactionList": "/abx/api/resources/actions",
+                    "abxActionImport": "/abx/api/resources/actions/import",
+                    "cloudAccount": "/iaas/api/cloud-accounts",
+                    "cloudProjects": "/iaas/api/projects",
+                    "cloudZone": "/iaas/api/zones",
+                    "evenBrokerSubscriptions": "/event-broker/api/subscriptions",
+                    "fabricComputes": "/iaas/api/fabric-computes",
+                    "fabricImages": "/iaas/api/fabric-images",
+                    "flavorMappings": "/iaas/api/flavor-profiles",
+                    "imageProfiles": "/iaas/api/image-profiles",
+                    "nsxCloudAccount": "/iaas/api/cloud-accounts-nsx-t",
+                    "storageProfiles": "/iaas/api/storage-profiles-vsphere",
+                    "tagAssignment": "/provisioning/uerp/provisioning/mgmt/tag-assignment",
+                    "vraAccessManagement": "/csp/gateway/portal/api/orgs",
+                    "vraGroupSearch": "/csp/gateway/am/api/orgs",
+                    "vraOrgUrl": "/csp/gateway/am/api/loggedin/user/orgs",
+                    "vraRestApiResourceActions": "form-service/api/custom/resource-actions",
+                    "vraServiceId": "/csp/gateway/slc/api/v2/orgs",
+                    "vroWorkflows": "/vro/workflows",
+                    "vsphereCloudAccount": "/iaas/api/cloud-accounts-vsphere",
+                    "vsphereStoragePolicies": "/iaas/api/fabric-vsphere-storage-policies"
+                }
+            },
+            "avamar": {
+                "backupAmountofCustomerVms": 90,
+                "backupAvamarServerFqdn": "",
+                "backupAvamarServerIP": "",
+                "backupDataDomainFqdn": "",
+                "backupDataDomainIP": "",
+                "backupEnableAvamarBackupofCustomerVms": true
+            },
+            "awsAccessKey": "Hardened-Removed",
+            "awsSecretKey": "Hardened-Removed",
+            "casAuthToken": "TransferredToPasswordManager",
+            "centralDebIp": "10.99.94.169",
+            "codeRepositoryPath": "/opt/dhc",
+            "componentCurrentVersion": "dhcVersion1_2",
+            "componentNextVersion": "dhcVersion2_1",
+            "computeHosts": {
+                "cmp001": {
+                    "hostfqdn": "phy01cmp001.intvcs01.next",
+                    "ipAddress": "172.22.16.111"
+                },
+                "cmp002": {
+                    "hostfqdn": "phy01cmp002.intvcs01.next",
+                    "ipAddress": "172.22.16.112"
+                },
+                "cmp003": {
+                    "hostfqdn": "phy01cmp003.intvcs01.next",
+                    "ipAddress": "172.22.16.113"
+                },
+                "cmp004": {
+                    "hostfqdn": "phy01cmp004.intvcs01.next",
+                    "ipAddress": "172.22.16.114"
+                },
+                "drCmp001": {
+                    "hostfqdn": "phy11cmp001.intvcs01.next",
+                    "ipAddress": "172.22.16.115"
+                },
+                "drCmp002": {
+                    "hostfqdn": "phy11cmp002.intvcs01.next",
+                    "ipAddress": "172.22.16.116"
+                },
+                "drCmp003": {
+                    "hostfqdn": "phy11cmp003.intvcs01.next",
+                    "ipAddress": "172.22.16.117"
+                },
+                "drCmp004": {
+                    "hostfqdn": "phy11cmp004.intvcs01.next",
+                    "ipAddress": "172.22.16.118"
+                }
+            },
+            "contentPacksList": [
+                "microsoft-windows-operating-system-content-pack",
+                "vmware-identity-manager-content-pack-1-0",
+                "microsoft-active-directory-content-pack-for-log-insight",
+                "dell-idrac"
+            ],
+            "customerCode": "int",
+            "dhcDeployPath": "deploy",
+            "dhcInstance": "01",
+            "dhcManagePath": "manage",
+            "dhcPlatform": "vcf",
+            "dhcReports": "/opt/nessus/var/dhcReports",
+            "dhcUpdatePath": "update",
+            "dnsServer": "172.22.16.24",
+            "dnsServer2": "172.22.16.25",
+            "drType": "active-active",
+            "edgeMgmtClusterName": "phy01ecn101",
+            "enableAntivirus": true,
+            "enableNessus": "true",
+            "enableSmtp": "true",
+            "enableVrni": "true",
+            "esxiCmpPassword": "{{ temporaryCredentials.password }}",
+            "esxiCmpRootPassword": "{{ temporaryCredentials.password }}",
+            "esxiCmpRootUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "esxiCmpUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "esxiRootPassword": "{{ temporaryCredentials.password }}",
+            "esxiRootUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "externalProxy": {
+                "access": "proxy",
+                "authMethod": "none",
+                "authPassword": "TransferredToPasswordManager",
+                "authUsername": "test",
+                "ip": "10.196.213.13",
+                "port": "8080"
+            },
+            "externalSmtpPort": "25",
+            "externalSmtpServer": "",
+            "gitBranch": "master-2.0",
+            "gitToken": "Harden-Removed",
+            "gitUsername": "DHC-Automation-User",
+            "hostSwitchProfile": {
+                "edge": "nsx-edge-single-nic-vtep-profile",
+                "uplink": "nsx-edge-single-nic-uplink-profile"
+            },
+            "httpGatewayIntegrationPoint": {
+                "categoryGroup": "Cloud.IaaS.DHC",
+                "hgwFoName": "ATOS",
+                "selfSource": "dhc://1",
+                "snowEventUser": "",
+                "snowEventUserPassword": "Hardened-Removed",
+                "srcId": "dhc://1",
+                "srcType": "ATF-DHC-1"
+            },
+            "imagesRepositoryPath": "/opt/binaries",
+            "infobloxAdminPassword": "infoblox",
+            "infobloxAdminUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "infobloxApiPassword": "{{ temporaryCredentials.password }}",
+            "infobloxApiUsername": "{{ temporaryCredentials.infobloxApiUsername }}",
+            "ipPools": {
+                "tep": {
+                    "edges": {
+                        "cmp": {
+                            "cidr": "172.22.20.0/24",
+                            "description": "NSX CMP Overlay TEP IP Pool",
+                            "displayName": "phy01-ippool-cmp-edges-tep",
+                            "end": "172.22.20.254",
+                            "gw": "172.22.20.1",
+                            "start": "172.22.20.16"
+                        },
+                        "mgt": {
+                            "cidr": "172.22.20.0/24",
+                            "description": "NSX MGT Edge Overlay TEP IP Pool",
+                            "displayName": "phy01-ippool-mgt-edges-tep",
+                            "end": "172.22.20.15",
+                            "gw": "172.22.20.1",
+                            "start": "172.22.20.4"
+                        }
+                    },
+                    "hosts": {
+                        "cmp": {
+                            "cidr": "172.22.17.0/24",
+                            "description": "ESXi CMP Host Overlay TEP IP Pool",
+                            "displayName": "phy01-ippool-cmp-hosts-tep",
+                            "end": "172.22.17.254",
+                            "gw": "172.22.17.1",
+                            "start": "172.22.17.32"
+                        },
+                        "mgt": {
+                            "cidr": "172.22.17.0/24",
+                            "description": "ESXi MGT Host Overlay TEP IP Pool",
+                            "displayName": "phy01-ippool-mgt-hosts-tep",
+                            "end": "172.22.17.31",
+                            "gw": "172.22.17.1",
+                            "start": "172.22.17.4"
+                        }
+                    }
+                }
+            },
+            "licenses": {
+                "ariaLicense": {
+                    "alias": "VCS Aria Suite License",
+                    "key": "5002D-WDW9M-180N9-LDURK-DEJHK"
+                },
+                "esxiLicense": {
+                    "key": "LJ00H-2EKDQ-589N0-001RK-11CPH"
+                },
+                "infobloxLicense": {
+                    "key": "AAAAA-AAAAA-AAAAA-AAAAA-AAAAA"
+                },
+                "nessusLicense": {
+                    "key": "7NL4-LME6-GW3M-WL8B"
+                },
+                "nsxtLicense": {
+                    "key": "LJ6AH-ANK50-G8HD0-0C3U6-351P4"
+                },
+                "terminalServerLicense": {
+                    "key": "R4NFY-RCBV6-4RQP4-X4GMR-GXYP3"
+                },
+                "vcsComputeLicense": {
+                    "key": "01290-2CK80-J80N3-03CR6-3TD0H"
+                },
+                "vrniLicense": {
+                    "alias": "VCS Aria Operations for Networks license",
+                    "key": "HJ017-NW190-281C1-096H0-2EFQ4"
+                },
+                "vsanComputeLicense": {
+                    "key": "6M682-0DK5M-180N0-0R90K-AWT7M"
+                }
+            },
+            "linuxPassword": "{{ temporaryCredentials.linuxPassword | b64decode }}",
+            "linuxUsername": "{{ temporaryCredentials.linuxUsername }}",
+            "locationCode": "phy01",
+            "locationCodeDr": "phy01",
+            "managementHosts": {
+                "drmgt01": {
+                    "hostfqdn": "phy11mgt001.intvcs01.next",
+                    "ipAddress": "172.22.16.105"
+                },
+                "drmgt02": {
+                    "hostfqdn": "phy11mgt002.intvcs01.next",
+                    "ipAddress": "172.22.16.106"
+                },
+                "drmgt03": {
+                    "hostfqdn": "phy11mgt003.intvcs01.next",
+                    "ipAddress": "172.22.16.107"
+                },
+                "drmgt04": {
+                    "hostfqdn": "phy11mgt004.intvcs01.next",
+                    "ipAddress": "172.22.16.108"
+                },
+                "mgt01": {
+                    "hostfqdn": "phy01mgt001.intvcs01.next",
+                    "ipAddress": "172.22.16.101"
+                },
+                "mgt02": {
+                    "hostfqdn": "phy01mgt002.intvcs01.next",
+                    "ipAddress": "172.22.16.102"
+                },
+                "mgt03": {
+                    "hostfqdn": "phy01mgt003.intvcs01.next",
+                    "ipAddress": "172.22.16.103"
+                },
+                "mgt04": {
+                    "hostfqdn": "phy01mgt004.intvcs01.next",
+                    "ipAddress": "172.22.16.104"
+                }
+            },
+            "managementPacksList": [
+                "active-directory-solution-for-vrealize-operations-manager",
+                "vmware-vrealize-operations-management-pack-for-nsx-t",
+                "vmware-vrealize-operations-management-pack-for-vmware-identity-manager",
+                "vmware-sddc-management-health-solution",
+                "vrealize-operations-management-pack-for-vmware-site-recovery-manager",
+                "vrealize-operations-management-pack-for-vsphere-replication"
+            ],
+            "mgmtDns": {
+                "adc001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01adc001",
+                    "octet": 24
+                },
+                "adc002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01adc002",
+                    "octet": 25
+                },
+                "ans001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01ans001",
+                    "octet": 37
+                },
+                "ans002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01ans002",
+                    "octet": 39
+                },
+                "avp001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01avp001",
+                    "octet": 99
+                },
+                "cmp001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01cmp001",
+                    "octet": 111
+                },
+                "cmp002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01cmp002",
+                    "octet": 112
+                },
+                "cmp003": {
+                    "cidr": "172.22.16",
+                    "name": "phy01cmp003",
+                    "octet": 113
+                },
+                "cmp004": {
+                    "cidr": "172.22.16",
+                    "name": "phy01cmp004",
+                    "octet": 114
+                },
+                "cpx001": {
+                    "cidr": "172.22.29",
+                    "name": "phy01cpx001",
+                    "octet": 32
+                },
+                "ctl001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01ctl001",
+                    "octet": 16
+                },
+                "ctl002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01ctl002",
+                    "octet": 17
+                },
+                "ctl003": {
+                    "cidr": "172.22.16",
+                    "name": "phy01ctl003",
+                    "octet": 18
+                },
+                "ctl011": {
+                    "cidr": "172.22.16",
+                    "name": "phy01ctl011",
+                    "octet": 56
+                },
+                "ctl012": {
+                    "cidr": "172.22.16",
+                    "name": "phy01ctl012",
+                    "octet": 57
+                },
+                "ctl013": {
+                    "cidr": "172.22.16",
+                    "name": "phy01ctl013",
+                    "octet": 58
+                },
+                "deb001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01deb001",
+                    "octet": 44
+                },
+                "drCmp001": {
+                    "cidr": "172.22.16",
+                    "name": "phy11cmp001",
+                    "octet": 115
+                },
+                "drCmp002": {
+                    "cidr": "172.22.16",
+                    "name": "phy11cmp002",
+                    "octet": 116
+                },
+                "drCmp003": {
+                    "cidr": "172.22.16",
+                    "name": "phy11cmp003",
+                    "octet": 117
+                },
+                "drCmp004": {
+                    "cidr": "172.22.16",
+                    "name": "phy11cmp004",
+                    "octet": 118
+                },
+                "drMgt001": {
+                    "cidr": "172.22.16",
+                    "name": "phy11mgt001",
+                    "octet": 105
+                },
+                "drMgt002": {
+                    "cidr": "172.22.16",
+                    "name": "phy11mgt002",
+                    "octet": 106
+                },
+                "drMgt003": {
+                    "cidr": "172.22.16",
+                    "name": "phy11mgt003",
+                    "octet": 107
+                },
+                "drMgt004": {
+                    "cidr": "172.22.16",
+                    "name": "phy11mgt004",
+                    "octet": 108
+                },
+                "edg001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01edg001",
+                    "octet": 200
+                },
+                "edg002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01edg002",
+                    "octet": 201
+                },
+                "edg101": {
+                    "cidr": "172.22.16",
+                    "name": "phy01edg101",
+                    "octet": 6
+                },
+                "edg102": {
+                    "cidr": "172.22.16",
+                    "name": "phy01edg102",
+                    "octet": 7
+                },
+                "hgw001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01hgw001",
+                    "octet": 59
+                },
+                "hsv001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01hsv001",
+                    "octet": 33
+                },
+                "ica001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01ica001",
+                    "octet": 36
+                },
+                "idm001": {
+                    "cidr": "172.22.29",
+                    "name": "phy01idm001",
+                    "octet": 11
+                },
+                "inf001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01inf001",
+                    "octet": 62
+                },
+                "inf002": {
+                    "cidr": "172.22.28",
+                    "name": "phy01inf002",
+                    "octet": 63
+                },
+                "inf003": {
+                    "cidr": "172.22.28",
+                    "name": "phy01inf003",
+                    "octet": 64
+                },
+                "inf004": {
+                    "cidr": "172.22.28",
+                    "name": "phy01inf004",
+                    "octet": 65
+                },
+                "inf005": {
+                    "cidr": "172.22.28",
+                    "name": "phy01inf005",
+                    "octet": 66
+                },
+                "lcm001": {
+                    "cidr": "172.22.29",
+                    "name": "phy01lcm001",
+                    "octet": 13
+                },
+                "mgt001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01mgt001",
+                    "octet": 101
+                },
+                "mgt002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01mgt002",
+                    "octet": 102
+                },
+                "mgt003": {
+                    "cidr": "172.22.16",
+                    "name": "phy01mgt003",
+                    "octet": 103
+                },
+                "mgt004": {
+                    "cidr": "172.22.16",
+                    "name": "phy01mgt004",
+                    "octet": 104
+                },
+                "nes001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01nes001",
+                    "octet": 55
+                },
+                "nsx001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01nsx001",
+                    "octet": 21
+                },
+                "nsx002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01nsx002",
+                    "octet": 61
+                },
+                "ops001": {
+                    "cidr": "172.22.29",
+                    "name": "phy01ops001",
+                    "octet": 14
+                },
+                "ops002": {
+                    "cidr": "172.22.29",
+                    "name": "phy01ops002",
+                    "octet": 15
+                },
+                "ops003": {
+                    "cidr": "172.22.29",
+                    "name": "phy01ops003",
+                    "octet": 16
+                },
+                "pxy001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01pxy001",
+                    "octet": 38
+                },
+                "pxy002": {
+                    "cidr": "172.22.28",
+                    "name": "phy01pxy002",
+                    "octet": 14
+                },
+                "pxy003": {
+                    "cidr": "172.22.28",
+                    "name": "phy01pxy003",
+                    "octet": 15
+                },
+                "rca001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01rca001",
+                    "octet": 35
+                },
+                "rep001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01rep001",
+                    "octet": 20
+                },
+                "sdm001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01sdm001",
+                    "octet": 32
+                },
+                "srm001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01srm001",
+                    "octet": 46
+                },
+                "srs001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01srs001",
+                    "octet": 67
+                },
+                "tss001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01tss001",
+                    "octet": 22
+                },
+                "tss002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01tss002",
+                    "octet": 23
+                },
+                "vcs001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01vcs001",
+                    "octet": 20
+                },
+                "vcs002": {
+                    "cidr": "172.22.16",
+                    "name": "phy01vcs002",
+                    "octet": 60
+                },
+                "vli001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01vli001",
+                    "octet": 28
+                },
+                "vli001a": {
+                    "cidr": "172.22.28",
+                    "name": "phy01vli001a",
+                    "octet": 29
+                },
+                "vli001b": {
+                    "cidr": "172.22.28",
+                    "name": "phy01vli001b",
+                    "octet": 30
+                },
+                "vli001c": {
+                    "cidr": "172.22.28",
+                    "name": "phy01vli001c",
+                    "octet": 31
+                },
+                "vnc001": {
+                    "cidr": "172.22.29",
+                    "name": "phy01vnc001",
+                    "octet": 18
+                },
+                "vni001": {
+                    "cidr": "172.22.29",
+                    "name": "phy01vni001",
+                    "octet": 17
+                },
+                "vra001": {
+                    "cidr": "172.22.29",
+                    "name": "phy01vra001",
+                    "octet": 20
+                },
+                "vra002": {
+                    "cidr": "172.22.29",
+                    "name": "phy01vra002",
+                    "octet": 21
+                },
+                "vra003": {
+                    "cidr": "172.22.29",
+                    "name": "phy01vra003",
+                    "octet": 22
+                },
+                "vra004": {
+                    "cidr": "172.22.29",
+                    "name": "phy01vra004",
+                    "octet": 23
+                },
+                "vro001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01vro001",
+                    "octet": 91
+                },
+                "vsr001": {
+                    "cidr": "172.22.16",
+                    "name": "phy01vsr001",
+                    "octet": 47
+                },
+                "wus001": {
+                    "cidr": "172.22.28",
+                    "name": "phy01wus001",
+                    "octet": 34
+                }
+            },
+            "midConfig": {
+                "snowInstanceUrl": "https://atosglobaldev.service-now.com/",
+                "snowUser": "cmp.atos.midserver03",
+                "snowUserPassword": "Hardened-Removed"
+            },
+            "networkAvnCrossRegion": {
+                "cidr": "172.22.29",
+                "description": "AVN Cross Region",
+                "dynamicPool": {
+                    "firstIP": 202,
+                    "lastIP": 240
+                },
+                "gw": "1",
+                "name": "xreg-m01-seg01",
+                "netmask": "255.255.255.0"
+            },
+            "networkAvnLocalRegion": {
+                "cidr": "172.22.28",
+                "description": "AVN Local Region",
+                "dynamicPool": {
+                    "firstIP": 202,
+                    "lastIP": 240
+                },
+                "gw": "1",
+                "name": "lreg-m01-seg01",
+                "netmask": "255.255.255.0"
+            },
+            "networkAvnT0Router": {
+                "bgpLocalAs": "64999",
+                "bgpNeighborAs": "64513",
+                "uplink1BgpIp": "1",
+                "uplink1Node1Ip": "2",
+                "uplink1Node2Ip": "3",
+                "uplink2BgpIp": "9",
+                "uplink2Node1Ip": "10",
+                "uplink2Node2Ip": "11"
+            },
+            "networkAvnT0Uplink1": {
+                "cidr": "172.22.27",
+                "gw": "1",
+                "mtu": "1500",
+                "netmask": "255.255.255.248",
+                "vlan": "2121"
+            },
+            "networkAvnT0Uplink2": {
+                "cidr": "172.22.27",
+                "gw": "9",
+                "mtu": "1500",
+                "netmask": "255.255.255.248",
+                "vlan": "2122"
+            },
+            "networkEdge": {
+                "cidr": "172.22.20",
+                "gw": "1",
+                "mtu": "9000",
+                "netmask": "255.255.255.0",
+                "vlan": "2104"
+            },
+            "networkMgmt": {
+                "cidr": "172.22.16",
+                "description": "DHC Management VLAN",
+                "dynamicPool": {
+                    "firstIP": 202,
+                    "lastIP": 240
+                },
+                "gw": "1",
+                "mtu": "1500",
+                "netmask": "255.255.255.0",
+                "pgName": "SDDC-DPortGroup-Mgmt",
+                "vlan": "2100"
+            },
+            "networkVmotion": {
+                "cidr": "172.22.18",
+                "gw": "1",
+                "mtu": "9000",
+                "netmask": "255.255.255.0",
+                "pgName": "SDDC-DPortGroup-vMotion",
+                "vlan": "2102"
+            },
+            "networkVsan": {
+                "cidr": "172.22.19",
+                "gw": "1",
+                "mtu": "9000",
+                "netmask": "255.255.255.0",
+                "pgName": "SDDC-DPortGroup-VSAN",
+                "vlan": "2103"
+            },
+            "networkVxlan": {
+                "cidr": "172.22.17",
+                "gw": "1",
+                "mtu": "9000",
+                "netmask": "255.255.255.0",
+                "pgName": "VXLAN (VTEP) - DHCP Network",
+                "vlan": "2101"
+            },
+            "nsxAdminPassword": "{{ temporaryCredentials.password }}{{ temporaryCredentials.password }}",
+            "nsxAdminUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "nsxt": {
+                "apiBackupHourOfDay": "23",
+                "apiBackupMinuteOfDay": "0",
+                "apiBackupPort": "22",
+                "apiPort": "443",
+                "ip": "172.22.16.61"
+            },
+            "ntpServer1": "10.196.213.144",
+            "ntpServer2": "10.196.213.145",
+            "numberOfComputeHostsInWorkloadDomain": 8,
+            "numberOfManagementHosts": 8,
+            "oobEntity": null,
+            "opsServicesMonitored": [
+                {
+                    "services": [
+                        {
+                            "configName": "Active_Directory_Domain_Services",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "NTDS"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Active_Directory_Web_Services",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "ADWS"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "DFS_Namespace",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "DFS"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "DFSR_Replication",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "DFSR"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Kerberos_Key_Distribution_Center",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "KDC"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Netlogon",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "Netlogon"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "DHCPServer",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "DHCPServer"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "DNS_Server",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "DNS"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Windows_Time",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "W32Time"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01adc001"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "Active_Directory_Domain_Services",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "NTDS"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Active_Directory_Web_Services",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "ADWS"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "DFS_Namespace",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "DFS"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "DFSR_Replication",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "DFSR"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Kerberos_Key_Distribution_Center",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "KDC"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Netlogon",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "Netlogon"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "DHCPServer",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "DHCPServer"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "DNS_Server",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "DNS"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Windows_Time",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "W32Time"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01adc002"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "wsus",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "wsusservice"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "Windows_Time",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "W32Time"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01wus001"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "Windows_Time",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "W32Time"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01ica001"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "squid",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=squid"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "monit",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=monit"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01pxy002"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "squid",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=squid"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "monit",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=monit"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01pxy003"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "vault",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=vault"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01hsv001"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "webserver",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=apache2"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01deb001"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "monit",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=monit"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01hgw001"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "nessusd",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=nessusd"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "nessus-service",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.ct=nessus-service"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01nes001"
+                },
+                {
+                    "services": [
+                        {
+                            "configName": "postfix-qmgr",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.eq=qmgr"
+                                }
+                            ]
+                        },
+                        {
+                            "configName": "postfix-master",
+                            "isActivated": true,
+                            "parameters": [
+                                {
+                                    "key": "FILTER_VALUE",
+                                    "value": "State.Name.eq=master"
+                                }
+                            ]
+                        }
+                    ],
+                    "vmName": "phy01srs001"
+                }
+            ],
+            "passwordConfig": {
+                "chars": "ascii_letters,digits,@!#$%^?",
+                "length": "16"
+            },
+            "principalStorageTypeCmp": "vsan",
+            "proxyPort": 3128,
+            "sdmAdminPassword": "{{ temporaryCredentials.password }}",
+            "sdmAdminUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "sdmPassword": "{{ temporaryCredentials.password }}{{ temporaryCredentials.password }}",
+            "sdmRootPassword": "{{ temporaryCredentials.password }}{{ temporaryCredentials.password }}",
+            "sdmRootUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "sdmUsername": "vcf",
+            "searchDomain": "intvcs01.next",
+            "storageType": "VSAN",
+            "t1LogicalRouterDedicatedLb": {
+                "sgIdSuffix": "reg-a-m01-lb01-reg-a-m01-lb01",
+                "uplinkIp": "172.22.29.31"
+            },
+            "temporaryCredentials": {
+                "applianceRootUsername": "root",
+                "applianceUsername": "admin",
+                "infobloxApiUsername": "automation",
+                "linuxPassword": "TransferredToPasswordManager",
+                "linuxUsername": "next",
+                "password": "Harden-Removed",
+                "vcfBundleDownloadToken": "Hardened-Removed",
+                "vidmSshUsername": "sshuser",
+                "vmwareUser": "Dev-VMware-Communication@atos.net",
+                "vmwareUserPassword": "TransferredToPasswordManager",
+                "windowsPassword": "TransferredToPasswordManager",
+                "windowsUsername": "administrator"
+            },
+            "transportZone": {
+                "overlayName": "overlay-tz-phy01nsx002.intvcs01.next",
+                "vlanName": "phy01vtz001"
+            },
+            "updateSource": "10.99.94.158",
+            "vCenter": {
+                "cluster": "phy01-m01-cluster01",
+                "dataCenter": "phy01-m01-dc",
+                "datastore": "phy01-m01-vsan01",
+                "edgeResourcePool": "phy01-m01-sddc-edge",
+                "edgeVmFolder": "/vm/phy01-m01-fd-edge",
+                "netFolder": "/vm/Networking VMs",
+                "resourcePool": "phy01-m01-sddc-mgmt",
+                "server": "phy01vcs001.intvcs01.next",
+                "templateFolder": "/vm/Templates",
+                "user": "administrator@vsphere.local",
+                "vmFolder": "/vm/Management VMs"
+            },
+            "vCenterAdminPassword": "{{ temporaryCredentials.password }}",
+            "vCenterAdminUsername": "{{ vCenter.user }}",
+            "vCenterRootPassword": "{{ temporaryCredentials.password }}",
+            "vCenterRootUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "vault": {
+                "adServiceAccountDescription": "Service account for Vault in phy01",
+                "apiPassword": "Hardened-Removed",
+                "apiPort": "8200",
+                "apiUsername": "automation",
+                "ip": "172.22.28.33",
+                "serviceAccountNumber": "01",
+                "serviceName": "vlt"
+            },
+            "vaultPassword": "{{ vault.apiPassword }}",
+            "vaultUsername": "{{ vault.apiUsername }}",
+            "vcfPassword": "{{ temporaryCredentials.password }}",
+            "vcfUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "vidmAdminPassword": "{{ temporaryCredentials.password }}",
+            "vidmAdminUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "vidmRootPassword": "{{ temporaryCredentials.password }}",
+            "vidmRootUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "vidmSshPassword": "{{ temporaryCredentials.password }}",
+            "vidmSshUsername": "{{ temporaryCredentials.vidmSshUsername }}",
+            "vraCloud": {
+                "defaultOrganization": "CAS Atos"
+            },
+            "vraType": "on-prem",
+            "vrliAdminPassword": "{{ temporaryCredentials.password }}",
+            "vrliAdminUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "vrliEnvironmentName": "vRLI_environment",
+            "vrliRootPassword": "{{ temporaryCredentials.password }}",
+            "vrliRootUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "vrniAdminPassword": "{{ temporaryCredentials.password }}",
+            "vrniAdminUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "vropsAdminPassword": "{{ temporaryCredentials.password }}",
+            "vropsAdminUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "vropsEnvironmentName": "vROPS_environment",
+            "vropsRootPassword": "{{ temporaryCredentials.password }}",
+            "vropsRootUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "vrslcmAdminPassword": "{{ temporaryCredentials.password }}",
+            "vrslcmAdminUsername": "{{ temporaryCredentials.applianceUsername }}",
+            "vrslcmRootPassword": "{{ temporaryCredentials.password }}",
+            "vrslcmRootUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "vrslcmVcfPassword": "{{ temporaryCredentials.password }}",
+            "vrslcmVcfUsername": "vcfadmin",
+            "vsanWitnessHosts": {
+                "vwa001": {
+                    "mgmtIpAddress": "172.16.61",
+                    "mgmtNetworkCidr": "172.16.61.110/24",
+                    "name": "phy01vwa001.intvcs01.next",
+                    "size": "medium"
+                },
+                "vwa002": {
+                    "mgmtIpAddress": "172.16.61",
+                    "mgmtNetworkCidr": "172.16.61.111/24",
+                    "name": "phy01vwa002.intvcs01.next",
+                    "size": "medium"
+                }
+            },
+            "vsanWitnessPassword": "{{ temporaryCredentials.password }}",
+            "vsanWitnessUsername": "{{ temporaryCredentials.applianceRootUsername }}",
+            "windowsPassword": "{{ temporaryCredentials.windowsPassword | b64decode }}",
+            "windowsUsername": "{{ temporaryCredentials.windowsUsername }}",
+            "workloadDomain": {
+                "clusterName": "{{ locationCode }}-c{{ workloadDomainNumber }}-cluster{{ clusterNumber }}",
+                "datacenterName": "{{ locationCode }}-c{{ workloadDomainNumber }}-dc",
+                "datastoreName": "{{ locationCode }}-c{{ workloadDomainNumber }}-vsan{{ clusterNumber }}",
+                "mgmtPg": "{{ locationCode }}-c{{ workloadDomainNumber }}-pg-mgmt{{ clusterNumber }}",
+                "name": "{{ customerCode }}-{{ locationCode }}-c{{ workloadDomainNumber }}",
+                "vdsName": "{{ locationCode }}-c{{ workloadDomainNumber }}-vds{{ clusterNumber }}",
+                "vmnic1Id": "2",
+                "vmnic2Id": "3",
+                "vmotionPg": "{{ locationCode }}-c{{ workloadDomainNumber }}-pg-vmtn{{ clusterNumber }}",
+                "vrepPg": "{{ locationCode }}-c{{ workloadDomainNumber }}-pg-vrep{{ clusterNumber }}",
+                "vsanPg": "{{ locationCode }}-c{{ workloadDomainNumber }}-pg-vsan{{ clusterNumber }}"
+            }
+        }
+    },
+    "ca": {
+        "hosts": [
+            "rca001",
+            "ica001"
+        ]
+    },
+    "cloudProxy": {
+        "hosts": [
+            "cpx001"
+        ]
+    },
+    "esxi": {
+        "hosts": [
+            "esxi001",
+            "esxi002",
+            "esxi003",
+            "esxi004"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "esxicmp": {
+        "hosts": [
+            "cmp001",
+            "cmp002",
+            "cmp003",
+            "cmp004"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "esxicmpall": {
+        "children": [
+            "esxicmp",
+            "esxidrcmp"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "esxidrcmp": {
+        "hosts": [
+            "drCmp001",
+            "drCmp002",
+            "drCmp003",
+            "drCmp004"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "esxidrmgt": {
+        "hosts": [
+            "drMgt001",
+            "drMgt002",
+            "drMgt003",
+            "drMgt004"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "esximgtall": {
+        "children": [
+            "esxi",
+            "esxidrmgt"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "idm": {
+        "hosts": [
+            "idm001"
+        ],
+        "vars": {
+            "ansible_user": "sshuser"
+        }
+    },
+    "inf": {
+        "hosts": [
+            "inf001",
+            "inf002",
+            "inf003",
+            "inf004",
+            "inf005"
+        ]
+    },
+    "linux": {
+        "hosts": [
+            "ans001",
+            "deb001",
+            "hsv001",
+            "pxy002",
+            "pxy003",
+            "nes001",
+            "hgw001",
+            "srs001"
+        ],
+        "vars": {
+            "ansible_user": "next"
+        }
+    },
+    "marketplace": {
+        "hosts": [
+            "lcm001"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "nsx": {
+        "children": [
+            "nsxtmanagermgmt",
+            "nsxtmanager"
+        ]
+    },
+    "nsxtedges": {
+        "hosts": [
+            "phy01ecn01edg02",
+            "phy01ecn01edg01"
+        ]
+    },
+    "nsxtmanager": {
+        "hosts": [
+            "nsx002"
+        ]
+    },
+    "nsxtmanagermgmt": {
+        "hosts": [
+            "nsx001"
+        ]
+    },
+    "ops": {
+        "hosts": [
+            "ops002",
+            "ops003"
+        ],
+        "vars": {
+            "ansible_become_method": "su",
+            "ansible_user": "admin"
+        }
+    },
+    "proxy": {
+        "hosts": [
+            "pxy002",
+            "pxy003"
+        ]
+    },
+    "sddcmanager": {
+        "hosts": [
+            "sdm001"
+        ],
+        "vars": {
+            "ansible_become_method": "su",
+            "ansible_user": "vcf"
+        }
+    },
+    "srm": {
+        "hosts": [
+            "srm001"
+        ]
+    },
+    "tss": {
+        "hosts": [
+            "tss001",
+            "tss002"
+        ]
+    },
+    "vcs": {
+        "hosts": [
+            "vcs001",
+            "vcs002"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "vli": {
+        "hosts": [
+            "vli001a",
+            "vli001b",
+            "vli001c"
+        ]
+    },
+    "vni": {
+        "hosts": [
+            "vni001"
+        ]
+    },
+    "vra": {
+        "hosts": [
+            "vra004",
+            "vra003",
+            "vra002"
+        ]
+    },
+    "vraproxies": {
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "vsr": {
+        "hosts": [
+            "vsr001"
+        ]
+    },
+    "windows": {
+        "hosts": [
+            "ica001",
+            "rca001",
+            "adc001",
+            "adc002",
+            "tss001",
+            "tss002",
+            "wus001"
+        ],
+        "vars": {
+            "ansible_become_method": "runas",
+            "ansible_become_user": "administrator@intvcs01.next",
+            "ansible_connection": "winrm",
+            "ansible_user": "administrator",
+            "ansible_winrm_server_cert_validation": "ignore",
+            "ansible_winrm_transport": "kerberos"
+        }
+    },
+    "witness": {
+        "hosts": [
+            "vwa001",
+            "vwa002"
+        ],
+        "vars": {
+            "ansible_user": "root"
+        }
+    },
+    "wus": {
+        "hosts": [
+            "wus001"
+        ]
+    }
+}
